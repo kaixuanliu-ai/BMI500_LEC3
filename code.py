@@ -4,12 +4,12 @@ def leibniz_sum_2j (n:int):
     """
     Compute partial sums of the Leibniz formula for π.
 
-    n : Number of terms to include (n >= 1, int)
+    n : Number of terms to include (n >= 0, int)
 
     Returns: sum of the first n terms of the Leibniz series (float)
     """
-    if n < 0:    
-      return 0.0
+    if n < 0:
+        return 0.0
     
     total=0.0
     pairs = n // 2
